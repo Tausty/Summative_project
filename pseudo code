@@ -2,3 +2,143 @@
   
 load title screen  
 use the keyboard to interact with the title screen  
+
+--------------------------------------
+|                                    |
+|              P L A Y               |
+|                                    |
+|        > Bugs (artifacts)          |
+|         Character select           |
+|                                    |
+--------------------------------------
+
+if character select is pressed laod this 
+use the kaybord to interact, whatever the little arrow is under is what character is selected
+press back to go back to the title screen
+--------------------------------------
+|  |---|      |---|      |---|       |
+|  | S |      | G |      | M |       |
+|  |---|      |---|      |---|       |
+|    ^                               |
+|             B A C K                |
+|                                    |
+--------------------------------------
+
+if bugs is sellectd load this 
+what ever the arrow is under is which artifcat you switch on or off
+if a - is there its off, if a 0 is there its on
+press back to go back to the title screen 
+--------------------------------------
+|    0    0    -    -    -    -      |
+|  |---||---||---||---||---||---|    |        
+|  | I || B || S || R || E || SA|    |
+|  |---||---||---||---||---||---|    |       
+|    ^                               |
+|             B A C K                |
+|                                    |
+--------------------------------------
+
+if play is selected load the first zone 
+see example map.png for our example map
+
+once the first room is loaded, the character spawns and movment and firing options are avilabl to the player
+the doors to the other room open, with a wall blocking any player movment through it (but not enemies)
+enemies will then "spawn" from the mist, and walk towords the player 
+enemies will be numbers and will be defrianted by the numerical value, usally the higher the stronger, elites will be 2 digits
+                % ^1 #
+--------------- 1#%23@-----------------
+|  _ _             0                   |
+| _ _ _       [][]  [][]              |        
+|   _ _       []      []       9       # 2*)1
+|                 -Q         8          #*2$13 12      
+|             []      []        0    %&312%
+|             [][]  [][]              |
+|                                     |
+---------------#123451----------------
+(the mist will look like this inagme, but from here on out the mist will be represented witha  line of 1s)
+
+the player will then shoot and move to clear the enmies
+killed enemies will drop money 
+---------------1111111-----------------
+|  _ _             0                  |
+| _ _ _       [][]  [][]              |        
+|   _ _       []      []       9      #1 
+|             Q -  -  -  -  -   8     #1      
+|             []      []        0     #1
+|             [][]  [][]              |
+|                                     |
+---------------1111111-----------------
+
+some of the mist will fall, and the player can the go to new rooms
+---------------       -----------------
+|  _ _            $                    |
+| _ _ _       [][]  [][]      $$       |        
+|   _ _       []      []              
+|                    $           Q                  
+|             []      []             
+|             [][]  [][]    $$         |
+|                                      |
+---------------1111111-----------------
+
+
+once the new room is entered the mist rises again, repeat the processes. lets say in this new room there is a shop 
+the player can walk up to the wares, and a text prompot apears that explains the item and a YES or NO to buying it
+
+--------------------------------------
+|                                    |    
+|                (.,.)               |
+|           4$     3$     1$         |
+|           r      L      O          |
+|                            Q       |
+|                                    |
+--------------------------------------
+the player uses thier keyboard to interact with the menu
+--------------------------------------
+|     --------------                 |    
+|    |healing potion|,.)             |
+|    |  Y    1$   N | 3$     1$      |
+|    |  ^           | L      OQ      |
+|     --------------                 |
+|                                    |
+--------------------------------------
+
+powerups can be picked up if they are found by walking over them
+enemies can also drop keys by chance, they keys can be used on chests with the same system as the shop popup (a Y or N menu)
+repeat this process untill the end of the zone, then go to a new zone with a new currency 
+every 2 zones there will be a boss 
+
+every NPC and PC will have these stats
+projectile damadge
+projectile hit effect
+speed 
+luck
+hit effect
+attack speed
+projectile speed 
+critical damadge chance 
+health
+position
+
+some stats will be displayed on the side 
+while health will be displayd in the top right of the screen
+                                this shows 2/3 health
+       --------------------------------------
+D 1    |     --------------           ()()--|    
+s 3    |    |healing potion|,.)             |
+as 4   |     |  Y    1$   N | 3$     1$     |
+cd 5%  |    |  ^           | L      OQ      |
+       |     --------------                 |
+       |                                    |
+       --------------------------------------
+
+if the charactesr health drops to zero load the death screen
+
+--------------------------------------
+|            Y O U D I E D           |
+|       cause of death:  traps       |
+|                                    |
+|            > RETRY                 |
+|        return to Main Menu         |
+|                                    |
+--------------------------------------
+
