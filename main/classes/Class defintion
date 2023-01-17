@@ -1,0 +1,181 @@
+#include <iostream>
+using namespace std;
+
+class sword_slinger {
+    public:
+        double Projectile_damadge;
+        double Projectile_hit_effect_toggle = true;
+        double Speed;
+        double Luck;
+        double Hit_effectable = false;
+        double Attack_speed;
+        double Projectile_speed;
+        double Critcal_damadge_chance;
+        double Health;
+        double Pos_x;
+        double Pos_y;  
+        double Powerup_pool=1;
+        double increase_dclass1=true;
+        double decrease_dclass2=true;
+        double decrease_dclass3=true;
+};
+class magicslinger {
+    public:
+        double Projectile_damadge;
+        double Projectile_hit_effect_toggle = true;
+        double Speed;
+        double Luck;
+        double Hit_effectable = false;
+        double Attack_speed;
+        double Projectile_speed;
+        double Critcal_damadge_chance;
+        double Health;
+        double Pos_x;
+        double Pos_y;  
+        double Powerup_pool=2;
+        double decrease_dclass1=true;
+        double increase_dclass2=true;
+        double decrease_dclass3=true;
+};
+class gunslinger {
+    public:
+        double Projectile_damadge;
+        double Projectile_hit_effect_toggle = true;
+        double Speed;
+        double Luck;
+        double Hit_effectable = false;
+        double Attack_speed;
+        double Projectile_speed;
+        double Critcal_damadge_chance;
+        double Health;
+        double Pos_x;
+        double Pos_y;  
+        double Powerup_pool=3 ;
+        double decrease_dclass1=true;
+        double decrease_dclass2=true;
+        double increase_dclass3=true;
+};
+class Enemy {
+    public:
+        double Projectile_damadge;
+        double Projectile_hit_effect_toggle = false;
+        double Speed;
+        double Luck;
+        double Hit_effectable = false;
+        double Attack_speed;
+        double Projectile_speed;
+        double Crit_chance;
+        double Health;
+        double Pos_x;
+        double Pos_y;  
+};
+
+class Specific_Powerup {
+    public:
+        double Damadge_increase;
+        double Speed_increase;
+        double Hit_effect_time_increase;
+        double Hit_effect_damadge_increase;
+        double Hit_effect_CCtime_increase;
+        double Hit_effect_attackspeed_increase;
+        double Hit_effect_crit_chance_increase;
+        double Projectile_speed_increase;
+        double Crit_chance_increase;
+        double Attack_speed_increase;
+        double Projectile_range_increase;
+        double Projectile_count_increase;
+        double Luck_increase;
+        double Picked_up = false;
+        double Pos_x;
+        double Pos_y;
+};
+
+class Global_powerup {
+            double Projectile_damadge;
+        double Projectile_hit_effect_toggle = false;
+        double Speed;
+        double Luck;
+        double Hit_effectable = false;
+        double Attack_speed;
+        double Projectile_speed;
+        double Crit_chance;
+        double Health;
+        double Pos_x;
+        double Pos_y;  
+};
+
+class Specific_Powerup {
+    public:
+        double Damadge_increase;
+        double Speed_increase;
+        double hit_effect_time_increase;
+        double Hit_effect_damadge_increase;
+        double Hit_effect_CCtime_increase;
+        double Hit_effect_attackspeed_increase;
+        double Hit_effect_crit_chance_increase;
+        double Projectile_speed_increase;
+        double Crit_chance_increase;
+        double Attack_speed_increase;
+        double Projectile_range_increase;
+        double Projectile_count_increase;
+        double Luck_increase;
+        double Picked_up = false;
+        double Pos_x;
+        double Pos_y;
+};
+
+
+class Projectile{
+    double Damadge;
+    double Speed;
+    double Count;
+    double Hit_affect_toggle = false;
+    double Crit_chance;
+    double Dclass;
+    double Range;
+    double Pos_y;
+    double Pos_x;
+};
+
+class Hiteffect{
+    double Damage;
+    double Time;
+    double CCtime;
+    double Dclass;
+    double Crit_chance;
+    double Pos_x;
+    double Pos_y;
+};
+
+class Threats{
+    double Size;
+    double Walkibility = true;
+    double Damadge;
+    double Proc_time;
+    double Leavable_while_proc = true;
+    double Teleport_player_out = true;
+    double Pos_x;
+    double Pos_y;
+};
+
+class chests {
+    double content_type;
+    double mimic=false;
+    double content_amount;
+    double Pos_x;
+    double Pos_y;
+
+};
+
+class shopslinger {
+    double inventory_type;
+    double slot_1_item;
+    double slot_2_item;
+    double slot_3_item;
+    double slot_1_price;
+    double slot_2_price;
+    double slot_3_price;
+    double anger;
+    double Pos_x;
+    double Pos_y;
+};
