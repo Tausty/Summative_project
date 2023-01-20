@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                //"${workspaceFolder}/libraries/**",
                 "/usr/include/c++/9"
             ],
             "defines": [],
