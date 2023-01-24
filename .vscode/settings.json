@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "class defintion": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "typeinfo": "cpp"
     }
 }
