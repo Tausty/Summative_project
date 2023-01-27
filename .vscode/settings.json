@@ -3,5 +3,6 @@
         "class defintion": "cpp",
         "iostream": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
